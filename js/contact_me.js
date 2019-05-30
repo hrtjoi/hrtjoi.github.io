@@ -17,7 +17,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://heartjoystudios.000webhostapp.com/contact_me.php",
+                url: "/mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
@@ -41,10 +41,10 @@ $(function() {
                 error: function() {
                     // Fail message
                     $('#success').html("<div class='alert alert-success'>"); //danger script = <div class='alert alert-danger'>
-                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-success').append("<strong>Thanks for contacting me " + firstName + ", an email has been sent. I will reply within 24 hours :) (if you need contact more urgently please call 0410419341)");
-                    $('#success > .alert-success').append('</div>');
+                    $('#success > .alert-danger').append("<strong>Thanks for contacting me " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
