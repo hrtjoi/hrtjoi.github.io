@@ -117,7 +117,7 @@
                             Her ability to create life-like portraits has seen her receive several
                             commissions to capture moments in time.
                         </p>
-                        <h3>The artist,<br /> Jo smith</h3>
+                        
                     </div>
 				</div>
 			</div>
@@ -135,14 +135,20 @@
 			<div class="row">
 				<div class="categories">
 					<ul class="cat">
-						<li>
-							<ol class="type">
-								<li><a href="#" data-filter="*" class="active">All</a></li>
-								<li><a href="#" data-filter=".collection1">2018</a></li>
-								<li><a href="#" data-filter=".collection2">2017</a></li>
-								<li><a href="#" data-filter=".collection3">2016</a></li>
-							</ol>
-						</li>
+                        <li>
+                            <!--<li><a href="#" data-filter="*" class="active">All</a></li>-->
+                            <ol class="type">
+                                <li><a href="#" data-filter=".collection1" class="active" id="2018button">2018</a></li>
+                                <li><a href="#" data-filter=".collection2">2017</a></li>
+                                <li><a href="#" data-filter=".collection3">2016</a></li>
+                            </ol>
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function (event) {
+                                    document.getElementById("2018button").click();
+                                });
+                            </script>
+
+                        </li>
 					</ul>
 					<div class="clearfix"></div>
 				</div>
@@ -210,19 +216,6 @@
                                         <h4>Take a moment to breathe</h4>
                                     </div>
                                     <img src="images/2016/6takeamoment.jpg" class="img-responsive" alt="Project Title">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-4 col-lg-4 collection3">
-                        <div class="portfolio-item">
-                            <div class="hover-bg">
-                                <a href="images\2016\6imaynotbethereyet.jpg" title="Giraffe" data-lightbox-gallery="gallery1">
-                                    <div class="hover-text">
-                                        <h4>I may no be there yet</h4>
-                                    </div>
-                                    <img src="images\2016\6imaynotbethereyet.jpg" class="img-responsive" alt="Project Title">
                                 </a>
                             </div>
                         </div>
